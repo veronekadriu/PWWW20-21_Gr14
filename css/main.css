@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.topPage {
+    /* border: 5px solid red; */
+    text-align: start;
+    display: flex;
+    /* border: 1px solid blue; */
+    margin: 100px 50px;
+}
+
+#topBorder {
+    background-color: #3b7a9d;
+    width: 100%;
+    height: 10px;
+}
+
+.searchBar {
+    flex: 2;
+    width: 100px;
+    /* border: 5px solid red; */
+}
+
+#searchButton {
+    width: 60px;
+    height: 44px;
+    margin: 0px 0px 0px -4px;
+    border: none;
+    background-color: #3b7a9d;
+    color: white;
+}
+
+#textFieldOfSearch {
+    background-color: transparent;
+    border: gainsboro solid 0.5px;
+}
+
+.inputsOfSearchBar {
+    height: 40px;
+    width: 150px;
+    margin: 45px 0px 0px 0px;
+}
+
+.logo {
+    /* margin: 0px 0px 0px 0px;  */
+    font: Georgia;
+    font-size: 100px;
+    color: #333333;
+}
+
+.logoContainer {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+#thicLogo {
+    flex: 1;
+    /* border: 1px solid orange; */
+}
+
+#softLogo {
+    font: Georgia;
+    font-size: 100px;
+    color: #999999;
+    flex: 0.1;
+    /* border: 1px solid red; */
+}
+
+.largerLetter {
+    font-size: 110px;
+}
+
+#topRowLogo {
+    flex: 1;
+    order: 1;
+    margin-top: 20px;
+}
+
+#bottomRowLogo {
+    flex: 1;
+    order: 2;
+}
+
+.softLogoText {
+    font-size: 30px;
+    color: #999999;
+}
