@@ -1,1 +1,1 @@
-# PWWW20-21_Gr14
+Projekti grupor per lenden Programimi ne WWW nga grupi 14.
