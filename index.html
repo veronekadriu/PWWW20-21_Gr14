@@ -103,6 +103,7 @@
 
     </header>
     <!-- --------------------MAIN - MBRESA ------------------>
+    <main>
     <div id="p1">
         <img src="" alt="photo">
         <h4>Title goes here</h4>
@@ -143,12 +144,16 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
     </div>
-    <main>
+    
         <!-- --------------------MAIN - VERONA ------------------>
 
         <div id="video">
             <h4>Take The Virtual Tour</h4>
-            <video src="" alt="video"></video>
+            <video id="video1" width="500" controls>
+                <source src="images/video.mp4" type="video/mp4">
+                Shfletuesi juaj nuk e perkrah audio elementin
+        
+            </video>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <a href="#">Read More ></a>
@@ -203,17 +208,33 @@
     <!-- Me rishiku me veronen dhe mbresen  -->
     <script>
         var slideIndex = 1;
-        showSlides(slideIndex);
+        //VERONA ADDED PER ME U NDRRU VET CDO DY SEKONDA SLIDES MUNDET EDHE USERI MI NDRRU MASNEJ QE JO NDRROHEN VET
+        var myIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        changeSlides(slideIndex);
 
         function plusSlides(n) {
-            showSlides(slideIndex += n);
+            changeSlides(slideIndex += n);
         }
 
         function currentSlide(n) {
-            showSlides(slideIndex = n);
+            changeSlides(slideIndex = n);
         }
 
-        function showSlides(n) {
+        function changeSlides(n) {
             var i;
             var slides = document.getElementsByClassName("slides");
             var dots = document.getElementsByClassName("dot");
@@ -233,6 +254,8 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
+
+    
 
 
 </body>
