@@ -174,3 +174,42 @@ body {
     font-size: 30px;
     color: #999999;
 }
+
+
+/* Verona */
+
+/* footer */
+#copyright {
+    text-align: left;
+    color:#999999;
+    width:50%;
+    
+    
+}
+#template{
+    text-align: right;
+    color:#999999;
+    width:50%;
+    
+    
+}
+#field{
+    width: 100%;
+    display: flex;
+    
+}
+footer{
+    background-color: #D6D6D6;
+    border-color: #D6D6D6;;
+}
+
+/* main2 */
+
+#main2{
+    width: 100%;
+    display: flex;
+}
+
+.inline{
+    width:33.333333333333333333333333333333%;
+}
