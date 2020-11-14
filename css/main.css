@@ -79,19 +79,17 @@ body {
     flex-direction: column;
     /* border: 1px solid red; */
 }
-
+/* Slides changes from Verona */
 .slides {
-    display: none;
+    width:75%;
+    
 }
 
 .slider {
     display: flex;
-    flex-direction: column;
-    margin-left: 300px;
-    margin-right: 300px;
-    position: relative;
-    margin-top: 100px;
-    width: 960px;
+    margin-top: 30px;
+    width: 97%;
+    margin-left: 15px;
     height: 400px;
     /* border: 1px solid red;
     background-color: violet; */
@@ -99,11 +97,10 @@ body {
 }
 
 .contentDescription {
+    padding-top: 20px;
     z-index: 2;
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 25%;
+    background-color: black;
     display: grid;
     color: white;
     grid-template-columns: repeat(7, 1fr);
