@@ -132,11 +132,19 @@ body {
     transition: background-color 0.6s ease;
 }
 
+.active,
+.dot:hover {
+    background-color: black;
+}
+
 #sliderText {
     grid-column: 1/8;
 }
 
 .slideControlls {
+    margin-top: 20px;
+    grid-column: 1/8;
+    /* border: 1px solid red; */
     cursor: pointer;
     color: white;
     font-size: 20px;
