@@ -2,6 +2,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .navBar {
@@ -213,6 +214,7 @@ body {
     text-align: right;
     color: #999999;
     width: 50%;
+    margin-right: 10px;
 }
 
 #field {
@@ -222,8 +224,7 @@ body {
 
 footer {
     background-color: #D6D6D6;
-    border-color: #D6D6D6;
-    ;
+    border-color: #D6D6D6;    
 }
 
 
@@ -236,7 +237,10 @@ footer {
 
 .inline {
     width: 33.333333333333333333333333333333%;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
 }
 
 /* instructos */
@@ -254,8 +258,6 @@ footer {
 .inline h4{
     text-align: left;
 }
-
-
 
 .insIcon{
     margin-top:10px;
