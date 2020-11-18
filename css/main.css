@@ -192,12 +192,28 @@ body {
 /* Mbresa */
 
 
-#p1, #p2, #p3, #p4 {
+ .p1, .p2, .p3, .p4 {
+  float: left;
+  width: 25%;
   display: inline-block;
-  width: 20%;
   text-align: left;
 }
 
+#block4 {
+    margin: 22px;
+    }
+
+.text {
+  width: 250px;
+}
+
+.title {
+  color: blue;
+}
+
+#main2 {
+  margin-left: 15px;
+}
 
 /* Verona */
 
@@ -225,7 +241,7 @@ body {
 
 footer {
     background-color: #D6D6D6;
-    border-color: #D6D6D6;    
+    border-color: #D6D6D6;
 }
 
 
@@ -257,8 +273,8 @@ footer {
 .ins{
     width:100%;
     display: flex;
-    
-   
+
+
 }
 
 
