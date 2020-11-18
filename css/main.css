@@ -152,7 +152,7 @@ body {
     /* border: 1px solid red; */
     cursor: pointer;
     color: white;
-    */
+
 }
 
 #thicLogo {
@@ -237,4 +237,28 @@ footer {
 .inline {
     width: 33.333333333333333333333333333333%;
     text-align: center;
+}
+
+/* instructos */
+.ins{
+    width:100%;
+    display: flex;
+    
+   
+}
+.insBody{
+    text-align: left;
+
+}
+
+.inline h4{
+    text-align: left;
+}
+
+
+
+.insIcon{
+    margin-top:10px;
+    width: 80px;
+    height:80px;
 }
