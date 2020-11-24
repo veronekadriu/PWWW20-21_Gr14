@@ -1,33 +1,36 @@
 
 /* Slides changes from Verona */
 
-.slides {
-    width: 75%;
-    flex: 1;
+.slides{
+    
+}
+.slides img{
+    width: 960px ;
+    height:400px;
+    
 }
 
 .slider {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    width: 97%;
     margin-left: 15px;
+    margin-right:15px;
     height: 400px;
 }
 
 .contentDescription {
-    flex: 0.3;
+    
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
+    
 }
 
 .sliderButtons {
     /* border: 1px solid red; */
     display: inline-block;
     height: 25%;
-    width: 50;
+    width: 20px;
     margin-top: 24px;
     cursor: pointer;
 }
