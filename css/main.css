@@ -205,12 +205,16 @@ body {
 
 .text {
   width: 250px;
+  color: grey;
 }
 
-.title {
-  color: blue;
+.title, .link {
+  color: steelblue;
 }
 
+a:link {
+  text-decoration: none
+}
 #main2 {
   margin-left: 15px;
 }
