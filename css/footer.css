@@ -1,0 +1,25 @@
+/* footer */
+
+#copyright {
+    text-align: left;
+    color: #999999;
+    width: 50%;
+    margin-left: 20px;
+}
+
+#template {
+    text-align: right;
+    color: #999999;
+    width: 50%;
+    margin-right: 10px;
+}
+
+#field {
+    width: 100%;
+    display: flex;
+}
+
+footer {
+    background-color: #D6D6D6;
+    border-color: #D6D6D6;
+}

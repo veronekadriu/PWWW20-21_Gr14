@@ -1,0 +1,109 @@
+/* ================================================NAVBAR=================================================== */
+.navBar {
+    padding-top:20px;
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid blue; */
+    background-color: #3b7a9d;
+}
+
+.navBarElements {
+    /* border: 1px solid blue; */
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-left: 10px;
+    color: white;
+    font-size: 13.3333px;
+    text-decoration: none;
+}
+.navBarElements:hover{
+    color: #333333;
+}
+
+.topPage {
+    /* border: 5px solid red; */
+    display: flex;
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-bottom:25px;
+    /* border: 1px solid blue; */
+    
+}
+
+#topBorder {
+    background-color: #3b7a9d;
+    width: 100%;
+    height: 10px;
+}
+/* ===========================================SEARCH============================================ */
+
+.searchBar  {
+   
+    margin: -30px 10px auto auto;
+    
+    /* border: 5px solid red; */
+}
+
+#searchButton {
+    width: 70px;
+    height: 44px;
+    margin: 0px 0px 0px -4px;
+    border: none;
+    background-color: #3b7a9d;
+    color: white;
+    
+}
+
+#textFieldOfSearch {
+    background-color: transparent;
+    border: gainsboro solid 0.5px;
+    width: 230px;
+}
+
+.inputsOfSearchBar {
+    height: 40px;
+    width: 150px;
+    margin: 45px 0px 0px 0px;
+}
+
+/* ===============================LOGO==================== */
+.logo {
+    /* margin: 0px 0px 0px 0px;  */
+
+    font-size: 50px;
+    color: #333333;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+
+
+#softLogo {
+
+    font-size: 50px;
+    color: #999999;
+    margin-top:5px;
+    /* border: 1px solid red; */
+}
+
+.largerLetter {
+    font-size: 60px;
+}
+
+#topRowLogo {
+
+    margin-top: 19px;
+    margin-bottom:5px;
+}
+
+
+
+.softLogoText {
+    font-size: 15px;
+    color: #999999;
+}
