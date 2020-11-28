@@ -81,14 +81,23 @@
 
 
  .p1, .p2, .p3, .p4 {
-  float: left;
-  width: 25%;
-  display: inline-block;
-  text-align: left;
+
+    display:inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right:5px; 
+}
+.p1 img, .p2 img, .p3 img, .p4 img{
+    width:296.5px;
+    height:250px;
+
 }
 
 #block4 {
-    margin: 22px;
+    margin-left: 15px;
+    display: inline;
+   
     }
 
 .text {
@@ -113,38 +122,63 @@ a:link {
 /* main2 */
 
 #main2 {
-    width: 100%;
-    display: flex;
+
+    display: inline;
 }
 
 .inline {
-    width: 36%;
+
+    display: inline-block;
     text-align: left;
     margin-bottom: 10px;
-    margin-right: 7.5px;
-    margin-left: 7.5px;
+    margin-right: 10px;
+    width:400px;
+
+}
+.inline3{
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width:520px;
+
 }
 
+
+
+.inline3 video{
+    width: 520px;
+    height:250px;
+}
 .inline2{
-    width:28%;
+
+    display: inline-block;
     text-align: left;
     margin-bottom: 10px;
-    margin-right: 7.5px;
-    margin-left: 7.5px;
+    margin-right: 10px;
 
 }
 
 /* instructos */
 .ins{
-    width:100%;
-    display: flex;
 
 
+    display: inline;
+
+
+
+}
+.insBody{
+    display: inline-block;
 }
 
 
 .inline h4{
     text-align: left;
+}
+.insImg{
+    display: inline-block;
+
 }
 
 .insIcon{
