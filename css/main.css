@@ -2,12 +2,12 @@
 /* Slides changes from Verona */
 
 .slides{
-    
+
 }
 .slides img{
     width: 960px ;
     height:400px;
-    
+
 }
 
 .slider {
@@ -20,10 +20,10 @@
 }
 
 .contentDescription {
-    
+
     background-color: black;
     display: grid;
-    
+
 }
 
 .sliderButtons {
@@ -80,24 +80,34 @@
 /* Mbresa */
 
 
- .p1, .p2, .p3, .p4 {
+ .p1 {
 
     display:inline-block;
     vertical-align: top;
     text-align: left;
     margin-bottom: 10px;
-    margin-right:5px; 
+    margin-right:5px;
 }
-.p1 img, .p2 img, .p3 img, .p4 img{
+.p1 img{
     width:296.5px;
     height:250px;
+}
 
+.tt {
+      padding-top: 5px;
+      padding-left: 10px;
+      color: white;
+      width: 100%;
+      height: 20px;
+      font-size: 13px;
+      /* border: 1px solid blue; */
+      background-color: #3b7a9d;
 }
 
 #block4 {
     margin-left: 15px;
     display: inline;
-   
+
     }
 
 .text {
