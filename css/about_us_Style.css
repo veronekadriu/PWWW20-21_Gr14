@@ -10,6 +10,8 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(1fr, 6);
     place-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #mainTitle {
@@ -25,13 +27,38 @@
     grid-column: 1/6;
     font-size: 1.2em;
     margin-top: -25px;
+    z-index: 1;
     color: white;
 }
 
 .elaborateBox {
-    flex: 1;
-    background-color: white;
-    width: 60%;
+    flex-direction: row;
+    width: 90%;
+    height: 400px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     align-self: center;
     text-align: center;
+    z-index: -1;
+    background-color: #3b7a9d;
+    display: flex;
+    justify-content: space-around;
+}
+
+#elaborateText {
+    position: relative;
+}
+
+.aboutUsBox {
+    order: 1;
+    height: 400px;
+    width: 45%;
+    background-color: red;
+}
+
+.contactUsBox {
+    order: 2;
+    height: 400px;
+    width: 45%;
+    background-color: purple;
 }
