@@ -1,10 +1,11 @@
 .titleBox {
     display: flex;
     flex-direction: column;
+    height: 800px;
 }
 
 .title {
-    flex: 2;
+    flex: 1;
     background-color: #156694;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -17,24 +18,25 @@
 #mainTitle {
     font-size: 3em;
     grid-column: 1/6;
-    /* border: 1px solid red; */
     color: white;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    margin-top: -30px;
     margin-bottom: -20px;
 }
 
 #subTitle {
     grid-column: 1/6;
     font-size: 1.2em;
-    margin-top: -25px;
+    margin-top: -250px;
     z-index: 1;
     color: white;
 }
 
 .elaborateBox {
+    flex: 1;
     flex-direction: row;
     width: 90%;
-    height: 400px;
+    height: 500px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     align-self: center;
@@ -51,16 +53,26 @@
 
 .aboutUsBox {
     order: 1;
-    height: 400px;
+    height: 500px;
     width: 45%;
-    /* margin-top: -25px;
-    background-color: #ffffff;*/
-    border: 1px solid black;
+    z-index: 2;
+    margin-top: -100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contactUsBox {
     order: 2;
-    height: 400px;
+    height: 500px;
+    width: 45%;
     z-index: 2;
-    border: 1px solid black;
+    margin-top: -100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
 }
