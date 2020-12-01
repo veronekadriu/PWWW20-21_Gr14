@@ -39,8 +39,8 @@
     border-bottom-left-radius: 10px;
     align-self: center;
     text-align: center;
-    z-index: -1;
-    background-color: #3b7a9d;
+    /* z-index: -1; */
+    /* background-color: #3b7a9d; */
     display: flex;
     justify-content: space-around;
 }
@@ -53,12 +53,14 @@
     order: 1;
     height: 400px;
     width: 45%;
-    background-color: red;
+    /* margin-top: -25px;
+    background-color: #ffffff;*/
+    border: 1px solid black;
 }
 
 .contactUsBox {
     order: 2;
     height: 400px;
-    width: 45%;
-    background-color: purple;
+    z-index: 2;
+    border: 1px solid black;
 }
