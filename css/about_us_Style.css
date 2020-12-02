@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .titleBox {
     display: flex;
     flex-direction: column;
@@ -27,7 +28,7 @@
 #subTitle {
     grid-column: 1/6;
     font-size: 1.2em;
-    margin-top: -250px;
+    margin-top: -200px;
     z-index: 1;
     color: white;
 }
@@ -45,13 +46,12 @@
     /* background-color: #3b7a9d; */
     display: flex;
     justify-content: space-around;
-}
-
-#elaborateText {
-    position: relative;
+    margin-bottom: 100px;
 }
 
 .aboutUsBox {
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
     order: 1;
     height: 500px;
     width: 45%;
@@ -62,9 +62,35 @@
     -webkit-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.abousUsTitle {
+    margin: 70px 0px 0px 0px;
+    font-family: 'Anton', sans-serif;
+    color: #777777;
+}
+
+.abousUsTitle>img {
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px -40px 0px;
+}
+
+.abousUsTitle>h1 {
+    text-shadow: 1px 1px 2px gray;
+}
+
+.aboutUsParagraph {
+    padding: 20px;
+    color: gray;
+    margin-top: -10px;
 }
 
 .contactUsBox {
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
     order: 2;
     height: 500px;
     width: 45%;
@@ -75,4 +101,9 @@
     -webkit-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contactUsBox:hover,
+.aboutUsBox:hover {
+    scale: 105%;
 }
