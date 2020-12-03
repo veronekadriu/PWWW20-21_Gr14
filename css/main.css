@@ -10,21 +10,21 @@
 
 }
 .slides{
-    
+
 
 }
 .slides img{
     width: 960px;
     height: 400px;
 
-   
+
 
 
 }
 
 .slider {
     position: relative;
-    
+
     margin-top: 30px;
     margin-left: 15px;
     margin-right:15px;
@@ -39,9 +39,9 @@
     display: grid;
     z-index: 10;
 
-  
-    
-   
+
+
+
 }
 
 .sliderButtons {
@@ -111,7 +111,7 @@
     height:180px;
 }
 
-.tt {
+.gallery>p {
       padding-top: 5px;
       padding-left: 10px;
       color: white;
@@ -120,6 +120,14 @@
       font-size: 13px;
       /* border: 1px solid blue; */
       background-color: #3b7a9d;
+
+}
+.gallery img {
+  padding-right: 22px;
+}
+.gallery img:hover {
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #block4 {
@@ -141,7 +149,7 @@ a:link {
   text-decoration: none
 }
 #main2 {
- 
+
 }
 
 /* Verona */
@@ -178,16 +186,16 @@ a:link {
 .inline3 video{
     width: 300px;
     height:180px;
-  
+
 }
 .inline2{
     margin-left: 10px;
     display: inline-block;
     text-align: left;
     width: 310px;
-    
-    
- 
+
+
+
 
 }
 .inline2 p{
