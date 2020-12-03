@@ -174,28 +174,37 @@ a:link {
 
 
 
+
 .inline3 video{
     width: 350px;
     height:200px;
 }
 .inline2{
-
+    margin-left: 5px;
     display: inline-block;
     text-align: left;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    width: 265px;
+    
+    
+ 
 
 }
+.inline2 p{
+    font-size: 14px;
+
+}
+.inline2 hr{
+    width: 100%;
+}
+
 
 /* instructos */
 .ins{
-
-
-    display: inline;
-
-
-
+    margin-bottom: 30px;
+    margin-top:-10px;
+    padding:0px;
 }
+
 .insBody{
     display: inline-block;
 }
