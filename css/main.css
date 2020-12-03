@@ -168,7 +168,7 @@ a:link {
     text-align: left;
     margin-bottom: 10px;
     margin-right: 10px;
-    width:350px;
+    width:300px;
 
 }
 
@@ -176,14 +176,15 @@ a:link {
 
 
 .inline3 video{
-    width: 350px;
-    height:200px;
+    width: 300px;
+    height:180px;
+  
 }
 .inline2{
-    margin-left: 5px;
+    margin-left: 10px;
     display: inline-block;
     text-align: left;
-    width: 265px;
+    width: 310px;
     
     
  
