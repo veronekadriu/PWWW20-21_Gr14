@@ -9,6 +9,9 @@
     opacity: 1;
 
 }
+h5{
+    color: grey;
+}
 .slides{
 
 
@@ -55,6 +58,7 @@
 
 #sliderContentAllign {
     text-align: start;
+    color:white;
 }
 
 #readMoreLink {
