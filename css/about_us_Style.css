@@ -107,3 +107,7 @@
 .aboutUsBox:hover {
     scale: 105%;
 }
+
+#mapholder {
+    height: 300px;
+}

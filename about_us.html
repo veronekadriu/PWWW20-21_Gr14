@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/body.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3A1zMlSSSYYI845KGsQGIIaV_wV0pChE&callback=initMap&libraries=&v=weekly" defer></script>
     <title>Document</title>
 </head>
 
@@ -72,6 +73,9 @@
 
                 <div class="contactUsBox">
 
+                    <div id="mapholder"></div>
+
+
                 </div>
 
 
@@ -84,6 +88,19 @@
         </div>
 
 
+        <script>
+            let map;
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("mapholder"), {
+                    center: {
+                        lat: -34.397,
+                        lng: 150.644
+                    },
+                    zoom: 8,
+                });
+            }
+        </script>
 
     </main>
 
