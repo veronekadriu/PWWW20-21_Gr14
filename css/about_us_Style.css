@@ -109,7 +109,35 @@
 }
 
 #mapholder {
+    margin-top: 20px;
     height: 300px;
-    width: 100%;
+    width: 80%;
     border-radius: 2%;
+}
+
+#contactUsText {
+    font-size: 20px;
+    grid-column: 2;
+    /* border: 1px solid blue; */
+    margin: 0px;
+    grid-column: 2;
+    text-align: left;
+}
+
+.contactUsTitle {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: grid;
+    /* border: 1px solid blue; */
+    grid-template-columns: 1.3fr 2fr
+}
+
+#contactImg {
+    display: inline;
+    grid-column: 1;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid blue; */
+    margin: 0px;
+    justify-self: right;
 }
