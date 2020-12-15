@@ -53,14 +53,70 @@
 
     <main>
 
-        <div class="payment">
+        <div class="slogan">
+            <h1>Make your dream Body a reality starting today</h1>
+            <p>The change is one click away</p>
+        </div>
+        <form class="paymentForm" method="POST" action="">
+            <div class="payment">
 
 
-            <div class="paymentSelection">
+                <div class="paymentSelection">
+                    <table class="typeOfSub">
+                        <tr>
+                            <th id="typeOfSubHeader">Payment Information</th>
+                        </tr>
+                        <tr>
+                            <td id="tpyeOfSubTitle">Type Of Subcription</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input checked name="typeOfSub" value="0" type="radio"><label for="">Regular 10$</label>
+                            </td>
+                            <td>
+                                <label for="">10$</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="typeOfSub" value="1" type="radio"><label for="">Double 20$</label>
+                            </td>
+                            <td>
+                                <label for="">20$</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="typeOfSub" value="2" type="radio"><label for="">Deluxe 40$</label>
+                            </td>
+                            <td>
+                                <label for="">40$</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="typeOfSub" value="3" type="radio"><label for="">VIP 100$</label>
+                            </td>
+                            <td>
+                                <label for="">100$</label>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="totalAmount">
+                                <label for=""> Total Amount</label>
+                            </td>
+                            <td class="totalAmount">
+                                $<input id="totalAmountText" type="text">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paymentInfo"></div>
 
             </div>
-            <div class="paymentInfo"></div>
-        </div>
+        </form>
     </main>
 
     <footer>
