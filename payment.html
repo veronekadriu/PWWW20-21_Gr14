@@ -108,7 +108,7 @@
                                 <label for=""> Total Amount</label>
                             </td>
                             <td class="totalAmount">
-                                $<input id="totalAmountText" type="text">
+                                $<input class="textBoxStyle" type="text">
                             </td>
                         </tr>
                     </table>
@@ -117,9 +117,73 @@
 
                     <table>
                         <tr>
-                            <th class="header">Payment Method</th>
+                            <th style="text-align: left;" colspan="6" class="header">Payment Method</th>
                         </tr>
-                        <tr></tr>
+                        <tr>
+                            <td colspan="6">
+                                <nav>
+                                    <img src="./images/visa.png" alt="">
+                                    <img src="./images/mastercard.png" alt="">
+                                    <img src="./images/amex.png" alt="">
+                                    <img src="./images/discover.png" alt="">
+                                    <img src="./images/dinersclub.png" alt="">
+                                    <img src="./images/jcb.png" alt="">
+
+                                </nav>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="spacingOfInputs" colspan="6">
+                                <label class="spacingOfInputs" for="">The owner of the Card</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <input class="textBoxStyle fullNameInput" name="fullName" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="spacingOfInputs"> <label id="expireInfo" for="">Expire Month</label></td>
+                            <td class="spacingOfInputs"><label for="" id="expireInfo">Expire Year</label> </td>
+                            <td class="spacingOfInputs"><label for="" id="expireInfo">SecurityCode</label> </td>
+                        </tr>
+                        <tr>
+                            <td class="spacingOfInputs">
+                                <select class="textBoxStyle" name="month" id="month">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </td>
+                            <td class="spacingOfInputs">
+                                <select class="textBoxStyle" name="month" id="month">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </td>
+                            <td class="spacingOfInputs">
+                                <input maxlength="3" minlength="3" class="textBoxStyle" type="password">
+                            </td>
+                        </tr>
                     </table>
                 </div>
 

@@ -8,6 +8,10 @@
     height: 500px;
 }
 
+table {
+    width: 100%;
+}
+
 .paymentForm {
     color: gray;
 }
@@ -31,6 +35,10 @@
     /* border: 1px solid red; */
 }
 
+img {
+    width: 40px;
+}
+
 .header {
     font-size: 25px;
     padding-bottom: 15px;
@@ -41,12 +49,27 @@
 }
 
 .totalAmount {
-    border: 1px solid red;
     padding-top: 50px;
     border: none;
 }
 
-#totalAmountText {
+.textBoxStyle {
     border: none;
     border-bottom: 1px solid black
+}
+
+.spacingOfInputs {
+    padding-top: 10px;
+}
+
+.fullNameInput {
+    width: 100%;
+}
+
+#expireInfo {
+    font-size: 10px;
+}
+
+#month {
+    width: 50%;
 }
