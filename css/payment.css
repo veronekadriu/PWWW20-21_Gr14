@@ -31,8 +31,8 @@
     /* border: 1px solid red; */
 }
 
-#typeOfSubHeader {
-    font-size: 30px;
+.header {
+    font-size: 25px;
     padding-bottom: 15px;
 }
 
