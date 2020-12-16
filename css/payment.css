@@ -5,7 +5,6 @@
 .payment {
     display: flex;
     width: 100%;
-    height: 500px;
 }
 
 table {
@@ -40,8 +39,8 @@ img {
 }
 
 .header {
-    font-size: 25px;
-    padding-bottom: 15px;
+    font-size: 35px;
+    padding-bottom: 10px;
 }
 
 #tpyeOfSubTitle {
@@ -55,7 +54,8 @@ img {
 
 .textBoxStyle {
     border: none;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
+    background-color: transparent;
 }
 
 .spacingOfInputs {
@@ -70,6 +70,42 @@ img {
     font-size: 10px;
 }
 
-#month {
-    width: 50%;
+.yearAndMonthInp {
+    width: 60%;
+}
+
+.ccs {
+    text-align: right;
+    /* border: 1px solid red; */
+}
+
+.billingInfo {
+    font-size: 25px;
+}
+
+.nameSpaceing {
+    padding-top: 6.5px;
+}
+
+.bindingBox {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    gap: 50px;
+}
+
+.number {
+    flex: 1;
+    width: 45%;
+}
+
+.email {
+    flex: 1;
+    width: 45%;
+}
+
+.submitStyle {
+    border: none;
+    height: 50px;
+    background-color: #3b7a9d;
 }

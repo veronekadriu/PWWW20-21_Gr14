@@ -9,9 +9,36 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/payment.css">
     <title>Paymnet</title>
+    <script>
+        function loadYears() {
+            var date = new Date();
+            var year = date.getFullYear();
+
+            var options = "";
+            for (var i = 0; i < 20; i++) {
+                options += "<option value='" + (year + i) + "'>" + (year + i) + "</option>";
+            }
+            document.getElementById("year").innerHTML = options;
+        }
+
+        function checked() {
+            if (document.getElementById('regular').checked) {
+                document.getElementById('totalAmountText').value = "$10";
+            }
+            if (document.getElementById('double').checked) {
+                document.getElementById('totalAmountText').value = "$20";
+            }
+            if (document.getElementById('deluxe').checked) {
+                document.getElementById('totalAmountText').value = "$40";
+            }
+            if (document.getElementById('vip').checked) {
+                document.getElementById('totalAmountText').value = "$100";
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="loadYears()">
     <header>
         <div id="topBorder">
 
@@ -57,7 +84,7 @@
             <h1>Make your dream Body a reality starting today</h1>
             <p>The change is one click away</p>
         </div>
-        <form class="paymentForm" method="POST" action="">
+        <form onchange="checked()" class="paymentForm" method="POST" action="">
             <div class="payment">
 
 
@@ -71,7 +98,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input checked name="typeOfSub" value="0" type="radio"><label for="">Regular 10$</label>
+                                <input name="typeOfSub" value="0" id="regular" type="radio"><label for="">Regular 10$</label>
                             </td>
                             <td>
                                 <label for="">10$</label>
@@ -79,7 +106,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="typeOfSub" value="1" type="radio"><label for="">Double 20$</label>
+                                <input id="double" name="typeOfSub" value="1" type="radio"><label for="">Double 20$</label>
                             </td>
                             <td>
                                 <label for="">20$</label>
@@ -87,7 +114,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="typeOfSub" value="2" type="radio"><label for="">Deluxe 40$</label>
+                                <input id="deluxe" name="typeOfSub" value="2" type="radio"><label for="">Deluxe 40$</label>
                             </td>
                             <td>
                                 <label for="">40$</label>
@@ -95,7 +122,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="typeOfSub" value="3" type="radio"><label for="">VIP 100$</label>
+                                <input id="vip" name="typeOfSub" value="3" type="radio"><label for="">VIP 100$</label>
                             </td>
                             <td>
                                 <label for="">100$</label>
@@ -107,8 +134,9 @@
                             <td class="totalAmount">
                                 <label for=""> Total Amount</label>
                             </td>
-                            <td class="totalAmount">
-                                $<input class="textBoxStyle" type="text">
+
+                            <td colspan="" class="totalAmount">
+                                <input id="totalAmountText" disabled class="textBoxStyle" type="text" value="$">
                             </td>
                         </tr>
                     </table>
@@ -134,7 +162,7 @@
                         </tr>
                         <tr>
                             <td class="spacingOfInputs" colspan="6">
-                                <label class="spacingOfInputs" for="">The owner of the Card</label>
+                                <label class="spacingOfInputs" for="">Credit card Number</label>
                             </td>
                         </tr>
                         <tr>
@@ -145,11 +173,12 @@
                         <tr>
                             <td class="spacingOfInputs"> <label id="expireInfo" for="">Expire Month</label></td>
                             <td class="spacingOfInputs"><label for="" id="expireInfo">Expire Year</label> </td>
-                            <td class="spacingOfInputs"><label for="" id="expireInfo">SecurityCode</label> </td>
+                            <td class="spacingOfInputs ccs"><label for="" id="expireInfo">SecurityCode</label> </td>
+                            <td style="padding: 19px;"></td>
                         </tr>
                         <tr>
                             <td class="spacingOfInputs">
-                                <select class="textBoxStyle" name="month" id="month">
+                                <select class="textBoxStyle yearAndMonthInp" name="month">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -165,23 +194,69 @@
                                 </select>
                             </td>
                             <td class="spacingOfInputs">
-                                <select class="textBoxStyle" name="month" id="month">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
+                                <select class="textBoxStyle yearAndMonthInp" name="year" id="year">
+                                    <!--Make the option value be handled by javascript-->
+                            
                                 </select>
                             </td>
-                            <td class="spacingOfInputs">
+                            <td colspan="2" class="spacingOfInputs ccs">
                                 <input maxlength="3" minlength="3" class="textBoxStyle" type="password">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="5" class="spacingOfInputs billingInfo"><label for="">Billing Info</label></td>
+                        </tr>
+                        <tr>
+                            <td class="nameSpaceing" colspan="5">
+                                <label class="placeholder" for="">Name</label>
+                                <input class="textBoxStyle fullNameInput  " type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nameSpaceing" colspan="5">
+                                <label for="">Address <input class="textBoxStyle fullNameInput " type="text"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nameSpaceing" colspan="5">
+                                <label for="">Address  2 *</label>
+                                <input class="textBoxStyle fullNameInput " type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nameSpaceing" colspan="5">
+                                <label for="">City/Town</label>
+                                <input class="textBoxStyle fullNameInput " type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nameSpaceing" colspan="8">
+                                <div class="bindingBox">
+                                    <div class="number">
+                                        <label for="">Number</label>
+                                    </div>
+                                    <div class="email">
+                                        <label for="">Email</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <div class="bindingBox">
+                                    <div class="number">
+                                        <input class="textBoxStyle fullNameInput" type="number">
+                                    </div>
+                                    <div class="email">
+                                        <input class="textBoxStyle fullNameInput" type="email">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <input class="fullNameInput submitStyle" type="submit" value="Subscribe">
                             </td>
                         </tr>
                     </table>
