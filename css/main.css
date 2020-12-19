@@ -146,12 +146,15 @@ h5{
   margin-right: auto;
   display: block;
 }
+
 .tt{
-  color: #dae8f1;
-  font-size: 12px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-left: 20px;
   padding-right: 20px;
+}
+.tt p {
+  color: #dae8f1;
+  font-size: 12px;
 }
 .tb {
   color:#3f7fa6;
@@ -161,8 +164,8 @@ h5{
 .boxx:hover {
   background-color: #387494;
   transform-style: preserve-3d;
-  transform: scale(1.05);
-  transition: all ease 0.2s;
+  transform: scale(1.1);
+  transition: all ease 0.5s;
 }
 .boxx:hover .tb {
   color: #dae8f1;
@@ -175,11 +178,6 @@ h5{
     margin-left: 15px;
     display: inline;
   }
-
-.text {
-  width: 225px;
-  color: grey;
-}
 
 .title, .link {
   color: steelblue;
