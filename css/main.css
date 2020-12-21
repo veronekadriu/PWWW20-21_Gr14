@@ -166,6 +166,10 @@ h5{
   transform: scale(1.1);
   transition: all ease 0.5s;
 }
+.text {
+    width: 225px;
+    color: grey;
+  }
 
 .boxx:hover .img {
   top: 0%;
