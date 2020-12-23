@@ -28,9 +28,10 @@
      }
      
      img {
-         width: 100px;
+         width: 180px;
          grid-row: 1;
-         margin-top: 75px;
+         margin-top: 50px;
+         margin-bottom: -40px;
          grid-column: 2/4;
          justify-self: center;
      }
