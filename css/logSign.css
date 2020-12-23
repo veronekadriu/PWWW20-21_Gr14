@@ -1,0 +1,95 @@
+     .mainBox {
+         margin-left: 25px;
+         padding: 0px;
+         /* margin-top: 10px; */
+         /* margin-right: 100px; */
+         width: 95%;
+         height: 700px;
+         background: rgb(198, 163, 245);
+         background: radial-gradient(circle, rgba(198, 163, 245, 1) 0%, rgba(82, 142, 175, 1) 95%);
+         overflow: auto;
+     }
+     
+     .innerContainer {
+         margin-left: 237.5px;
+         margin-top: 10%;
+         width: 50%;
+         height: 75%;
+         /* background-color: #8b4dff03; */
+         background-color: #ffffffaf;
+         box-shadow: 1px 1px 50px black;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+     }
+     
+     label {
+         color: gray;
+         ;
+     }
+     
+     img {
+         width: 100px;
+         grid-row: 1;
+         margin-top: 75px;
+         grid-column: 2/4;
+         justify-self: center;
+     }
+     
+     form {
+         grid-row: 2/5;
+         grid-column: 1/5;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 2fr 2fr;
+     }
+     
+     .inputContainer {
+         grid-column: 1/5;
+         row
+         /* border: 1px solid red; */
+     }
+     
+     .inputsAlign {
+         margin-left: 2px;
+     }
+     
+     .inputIcons {
+         grid-column: 1;
+         width: 20px;
+         margin-left: 10px;
+         margin-bottom: -20px;
+     }
+     
+     .inputStyle {
+         width: 90%;
+         border: none;
+         border-bottom: 1px solid gray;
+         background-color: transparent;
+         padding-left: 35px;
+     }
+     
+     .inputStyle:focus {
+         border-bottom: 2px solid blue;
+         /* box-shadow: 0px 1px 10px #3b7a9d; */
+     }
+     
+     .submitsContainer {
+         grid-row: 3;
+         grid-column: 1/3;
+     }
+     
+     .checkBoxLbl {
+         vertical-align: middle;
+     }
+     
+     #checkBox {
+         vertical-align: middle;
+         opacity: 0;
+     }
+     
+     .styleOfCheckBox {
+         border: 2px solid gray;
+         margin-left: 2px;
+         border-radius: 5px;
+     }
