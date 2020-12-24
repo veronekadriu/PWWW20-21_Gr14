@@ -52,7 +52,7 @@
 
     <main>
 
-        <div class="mainBox">
+        <div class="mainBox" id="signin">
 
             <div class="innerContainer">
                 <img src="./images/womanAndGuyIcon.png" alt="">
@@ -77,16 +77,54 @@
                     <input class="submitButton" type="submit" value="Log in">
 
                 </form>
-                <a class="signUpTrigger" href="">Dont have an Accout?</a>
+                <span onclick="signUp()" class="signUpTrigger">Dont have an Accout?</span>
+
+            </div>
+        </div>
+        <div class="mainBox" id="signup">
+
+            <div class="innerContainer">
+                <img src="./images/womanAndGuyIcon.png" alt="">
+                <form class="form" action="#">
+                    <div class="inputContainer">
+                        <img class="inputIcons" src="./images/emailIcon.png" alt="">
+                        <input class="inputsAlign inputStyle" placeholder="Email" type="email">
+                    </div>
+                    <div class="inputContainer">
+                        <img class="inputIcons" src="./images/lcokIcon.png" alt="">
+                        <input class="inputsAlign inputStyle " placeholder="Password" type="password ">
+                        <img class="inputIcons" src="./images/lcokIcon.png" alt="">
+                        <input class="inputsAlign inputStyle " placeholder="Confirm password" type="password ">
+                    </div>
+
+                    <!-- <div class="submitsContainer">
+                        <label class="checkBoxLbl "> 
+                            <label for="check" class="checkBoxContainer">
+                               <input type="checkbox" name="checkBox" id="check" class="checkbox"> 
+                               <span class="checkmark">   </span>
+                    </label>Remember Me</label>
+
+                    </div> -->
+                    <input class="submitButton" id="signUpButton" type="submit" value="Sign Up">
+
+                </form>
+
 
             </div>
         </div>
 
+
     </main>
     <script>
-        // function clicked(){
-        //     console.log("clicked")
-        // }
+        function signUp() {
+            var signUpDiv = document.getElementById("signup");
+            var signinDiv = document.getElementById("signin");
+
+
+
+            signUpDiv.style.display = "block";
+            signinDiv.style.display = "none";
+        }
     </script>
 
     <footer>

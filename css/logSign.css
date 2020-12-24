@@ -1,3 +1,11 @@
+     #signin {
+         display: block;
+     }
+     
+     #signup {
+         display: none;
+     }
+     
      .mainBox {
          margin-left: 25px;
          padding: 0px;
@@ -153,6 +161,7 @@
      }
      
      .signUpTrigger {
+         cursor: pointer;
          grid-row: 5;
          grid-column: 2/4;
          text-align: center;
@@ -161,5 +170,14 @@
      }
      
      .signUpTrigger:hover {
+         scale: 1.05;
          color: cornflowerblue;
+     }
+     
+     #signUpButton {
+         margin-top: 20px;
+         grid-row: 3;
+         width: 90%;
+         grid-column: 1/6;
+         margin-left: 25px;
      }
