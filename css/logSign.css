@@ -1,0 +1,183 @@
+     #signin {
+         display: block;
+     }
+     
+     #signup {
+         display: none;
+     }
+     
+     .mainBox {
+         margin-left: 25px;
+         padding: 0px;
+         /* margin-top: 10px; */
+         /* margin-right: 100px; */
+         width: 95%;
+         height: 700px;
+         background: rgb(198, 163, 245);
+         background: radial-gradient(circle, rgba(198, 163, 245, 1) 0%, rgba(82, 142, 175, 1) 95%);
+         overflow: auto;
+     }
+     
+     .innerContainer {
+         margin-left: 237.5px;
+         margin-top: 10%;
+         width: 50%;
+         height: 75%;
+         /* background-color: #8b4dff03; */
+         background-color: #ffffffaf;
+         box-shadow: 1px 1px 50px black;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+     }
+     
+     label {
+         color: gray;
+     }
+     
+     img {
+         width: 180px;
+         grid-row: 1;
+         margin-top: 50px;
+         margin-bottom: -40px;
+         grid-column: 2/4;
+         justify-self: center;
+     }
+     
+     form {
+         grid-row: 2/5;
+         grid-column: 1/5;
+         display: grid;
+         grid-template-columns: 1.5fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 2fr 2fr;
+     }
+     
+     .inputContainer {
+         grid-column: 1/5;
+     }
+     
+     .inputsAlign {
+         margin-left: 2px;
+     }
+     
+     .inputIcons {
+         grid-column: 1;
+         width: 20px;
+         margin-left: 10px;
+         margin-bottom: -20px;
+     }
+     
+     .inputStyle {
+         width: 90%;
+         border: none;
+         border-bottom: 1px solid gray;
+         background-color: transparent;
+         padding-left: 35px;
+     }
+     
+     .inputStyle:focus {
+         border-bottom: 2px solid blue;
+     }
+     
+     .submitsContainer {
+         grid-row: 3;
+         grid-column: 1/2;
+     }
+     
+     .checkBoxLbl {
+         vertical-align: middle;
+         display: block;
+         padding-left: 35px;
+         padding-top: 5px;
+         margin-left: 10px;
+         position: relative;
+         cursor: pointer;
+     }
+     
+     .checkBoxLbl input {
+         position: absolute;
+         opacity: 0;
+         cursor: pointer;
+         height: 20px;
+         width: 0px;
+         top: 0;
+         left: 0;
+         z-index: 10;
+     }
+     
+     .checkmark {
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 25px;
+         width: 25px;
+         border: 2px solid gray;
+         border-radius: 10px;
+     }
+     
+     .checkmark:after {
+         content: "";
+         position: absolute;
+         display: none;
+     }
+     
+     .checkBoxLbl input:checked~.checkmark:after {
+         display: block;
+     }
+     
+     .checkBoxLbl input:checked~.checkmark {
+         display: block;
+         background-color: #3b7a9d;
+         transition: ease-in-out 0.5s;
+     }
+     
+     .checkBoxLbl .checkmark:after {
+         left: 9px;
+         top: 5px;
+         width: 5px;
+         height: 10px;
+         border: solid white;
+         border-width: 0 3px 3px 0;
+         -webkit-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transition: ease-in-out 0.5s;
+     }
+     
+     .submitButton {
+         grid-row: 3;
+         grid-column: 3/6;
+         height: 30%;
+         width: 90%;
+         border: 1px solid gray;
+         background-color: transparent;
+         color: gray;
+     }
+     
+     .submitButton:hover {
+         scale: 1.1;
+         transition: ease-in-out 0.2s;
+         background-color: #3b7a9d5f;
+     }
+     
+     .signUpTrigger {
+         cursor: pointer;
+         grid-row: 5;
+         grid-column: 2/4;
+         text-align: center;
+         text-decoration: none;
+         color: gray;
+     }
+     
+     .signUpTrigger:hover {
+         scale: 1.05;
+         color: cornflowerblue;
+     }
+     
+     #signUpButton {
+         margin-top: 20px;
+         grid-row: 3;
+         width: 90%;
+         grid-column: 1/6;
+         margin-left: 25px;
+     }
