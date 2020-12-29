@@ -169,6 +169,7 @@ h5{
 .text {
     width: 225px;
     color: grey;
+    background-color: white;
   }
 
 .boxx:hover .img {
@@ -205,18 +206,15 @@ a:link {
 /* main2 */
 
 #main2 {
-
     display: inline;
 }
 
 .inline {
-
     display: inline-block;
     text-align: left;
     margin-bottom: 10px;
     margin-right: 10px;
     width:350px;
-
 }
 .inline3{
     display: inline-block;
@@ -226,10 +224,6 @@ a:link {
     width:300px;
 
 }
-
-
-
-
 .inline3 video{
     width: 300px;
     height:180px;
@@ -241,9 +235,6 @@ a:link {
     text-align: left;
     width: 310px;
 
-
-
-
 }
 .inline2 p{
     font-size: 14px;
@@ -253,6 +244,31 @@ a:link {
     width: 100%;
 }
 
+.story {
+  height: 100px;
+  margin-top: 10px;
+  color: white;
+  width: 350px;
+}
+span.hiddentext {
+  display: none;
+}
+.story:hover span.hiddentext{
+  display: block;
+  transition: 0.5s;
+}
+.story:hover .text1 {
+  height: 150px;
+  z-index: 100;
+  position: absolute;
+  width: 350px;
+  border-bottom: 2px solid grey;
+}
+.text1 {
+  padding-right: 10px;
+  margin: 0px;
+  background-color: white;
+}
 
 /* instructos */
 .ins{
