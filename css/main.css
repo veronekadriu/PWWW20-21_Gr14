@@ -260,7 +260,7 @@ span.hiddentext {
 .story:hover .text1 {
   height: 150px;
   z-index: 100;
-  position: absolute;
+  position: relative;
   width: 350px;
   border-bottom: 2px solid grey;
 }

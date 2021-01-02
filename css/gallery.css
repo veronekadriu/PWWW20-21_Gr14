@@ -2,7 +2,8 @@
 .titleBox {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 700px;
+
 }
 
 .title {
@@ -28,7 +29,9 @@
 #subTitle {
     grid-column: 1/6;
     font-size: 1.2em;
-    margin-top: -200px;
+    margin-top: -180px;
+    padding-left: 50px;
+    padding-right: 50px;
     z-index: 1;
     color: white;
 }
@@ -46,7 +49,7 @@
     /* background-color: #3b7a9d; */
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: -40px;
 
 }
 
