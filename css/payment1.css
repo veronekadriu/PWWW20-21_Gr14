@@ -1,0 +1,134 @@
+.slogan {
+    text-align:left;
+}
+main{
+    color: gray;
+}
+
+.payment {
+    display: flex;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+.paymentForm {
+    color: gray;
+    text-align: left;
+}
+
+.paymentSelection {
+    flex: 1;
+    /* background-color: rebeccapurple; */
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.paymentInfo {
+    flex: 1;
+    width: 50%;
+    /* background-color: red; */
+}
+.aboutUsBox{
+    height:300px;
+}
+
+.contactUsBox{
+    height: 580px;
+    width: 55%;
+    flex: 1;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+#imgs{
+    text-align: center;
+}
+.typeOfSub {
+    width: 100%;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+img {
+    width: 40px;
+}
+
+.header {
+    font-size: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#tpyeOfSubTitle {
+    padding-bottom: 20px;
+}
+
+.totalAmount {
+    padding-top: 50px;
+    border: none;
+}
+
+.textBoxStyle {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+
+.spacingOfInputs {
+    padding-top: 10px;
+}
+
+.fullNameInput {
+    width: 100%;
+}
+
+#expireInfo {
+    font-size: 10px;
+}
+
+.yearAndMonthInp {
+    width: 60%;
+}
+
+.ccs {
+    text-align: right;
+    /* border: 1px solid red; */
+}
+
+.billingInfo {
+    font-size: 25px;
+}
+
+.nameSpaceing {
+    padding-top: 6.5px;
+}
+
+.bindingBox {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    gap: 50px;
+}
+
+.number {
+    flex: 1;
+    width: 45%;
+}
+
+.email {
+    flex: 1;
+    width: 45%;
+}
+
+.submitStyle {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    background-color: #3b7a9d;
+}

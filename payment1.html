@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about_us_Style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/payment1.css">
+    
+
     <title>Payment</title>
+
     <script>
         function loadYears() {
             var date = new Date();
@@ -38,7 +42,7 @@
     </script>
 </head>
 
-<body onload="loadYears()">
+<body>
     <header>
         <div id="topBorder">
 
@@ -65,7 +69,6 @@
             </div>
         </div>
 
-
         <div>
             <nav class="navBar">
                 <a class="navBarElements" href="index.html">HOME</a>
@@ -77,24 +80,27 @@
         </div>
     </header>
 
-
     <main>
-
-        <div class="slogan">
-            <h1>Make your dream Body a reality starting today</h1>
-            <p>The change is one click away</p>
-        </div>
-        <form onchange="checked()" class="paymentForm" method="POST" action="">
-            <div class="payment">
+        <div class="titleBox">
+            <div class="title">
+                <p id="mainTitle">PAYMENT</p>
+                <!-- <p id="subTitle">The place to make wonders</p> -->
+            </div>
 
 
-                <div class="paymentSelection">
+            <div class="elaborateBox">
+
+                <div class="aboutUsBox">
+                    <form onchange="checked()" class="paymentForm" method="POST" action="">
+                        
                     <table class="typeOfSub">
-                        <tr>
-                            <th class="header">Payment Information</th>
+                        <tr >
+                            <th class="header" colspan="2">Payment Information</th>
+                           
+
                         </tr>
                         <tr>
-                            <td id="tpyeOfSubTitle">Type Of Subcription</td>
+                            <td id="tpyeOfSubTitle" colspan="2">Type Of Subcription</td>
                         </tr>
                         <tr>
                             <td>
@@ -140,15 +146,16 @@
                             </td>
                         </tr>
                     </table>
+                   
                 </div>
-                <div class="paymentInfo">
 
+                <div class="contactUsBox">
                     <table>
                         <tr>
-                            <th style="text-align: left;" colspan="6" class="header">Payment Method</th>
+                            <th style="text-align: center;" colspan="6" class="header">Payment Method</th>
                         </tr>
                         <tr>
-                            <td colspan="6">
+                            <td colspan="6" id="imgs"> 
                                 <nav>
                                     <img src="./images/visa.png" alt="">
                                     <img src="./images/mastercard.png" alt="">
@@ -254,8 +261,10 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr><td colspan="8"></td>
+                            </tr>
                         <tr>
-                            <td colspan="8">
+                            <td colspan="8" >
                                 <input class="fullNameInput submitStyle" type="submit" value="Subscribe">
                             </td>
                         </tr>
@@ -264,7 +273,25 @@
 
             </div>
         </form>
+
+                    
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
     </main>
+
 
     <footer>
 
