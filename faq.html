@@ -12,14 +12,14 @@
     <script type="text/javascript" src="js/toggle.js"></script>
 
     <style>
-         
-        
+
+
         .mainBox {
-        
+
          padding: 0px;
          /* margin-top: 10px; */
          /* margin-right: 100px; */
-         
+
          outline: #156694 solid 1px;
          outline-style: dashed;
          outline-offset: 5px;
@@ -35,66 +35,68 @@
      .hide {display: none;}
      .show {display: block;}
 
-     
+
     </style>
     <script>
-      
-        
-        
+
+
+
     </script>
 </head>
 <body>
     <!-- header -->
 
     <header>
-        <div id="topBorder">
+      <div id="topBorder">
 
-        </div>
-
-
-        <div class="topPage">
+      </div>
 
 
-
-            <span class="logo" id="thicLogo"><span class="largerLetter">B</span>ODY<span class="largerLetter">F</span>IT</span>
-            <span id="softLogo">|</span>
-
-            <div class="logoContainer">
-
-                <label class="softLogoText" id="topRowLogo"> Your Fitness Page </label>
-                <label class="softLogoText" id="bottomRowLogo">Welcome</label>
-
-            </div>
+      <div class="topPage">
 
 
-            <div class="searchBar">
-                <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
-                <button class="inputsOfSearchBar" id="searchButton">search</button>
-            </div>
-        </div>
 
-        <div>
-            <nav class="navBar">
-                <a class="navBarElements" href="index.html">HOME</a>
-                <div class="dropdown">
-                  <a class="navBarElements" class="dropbtn" href="#">GALLERY</a>
-                  <div class="dropdown-content">
-                    <a href="ambient.html">Ambient</a>
-                    <a href="training.html">Training</a>
-                    <a href="clients.html">Clients</a>
-                    <a href="staff.html">Staff</a>
-                  </div>
-                </div>
-                <a class="navBarElements" href="#news">LATEST NEWS</a>
-                <a class="navBarElements" href="about_us.html">ABOUT US</a>
-                <a class="navBarElements" href="login_SignUp.html">LOG IN</a>
-                <a class="navBarElements" href="payment.html">PAYMENT</a>
-            </nav>
-        </div>
+          <span class="logo" id="thicLogo"><span class="largerLetter">B</span>ODY<span class="largerLetter">F</span>IT</span>
+          <span id="softLogo">|</span>
+
+          <div class="logoContainer">
+
+              <label class="softLogoText" id="topRowLogo"> Your Fitness Page </label>
+              <label class="softLogoText" id="bottomRowLogo">Welcome</label>
+
+          </div>
+
+
+          <div class="searchBar">
+              <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
+              <button class="inputsOfSearchBar" id="searchButton">search</button>
+          </div>
+      </div>
+
+      <div>
+          <nav class="navBar">
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">GALLERY</a>
+                <ul>
+                  <li><a href="ambient.html">Ambient</a></li>
+                  <li><a href="training.html">Training</a></li>
+                  <li><a href="clients.html">Clients</a></li>
+                  <li><a href="staff.html">Staff</a></li>
+                </ul>
+            </li>
+              <li><a href="#news">LATEST NEWS</a></li>
+              <li><a href="about_us.html">ABOUT US</a></li>
+              <li><a href="login_SignUp.html">LOG IN</a></li>
+              <li><a href="payment.html">PAYMENT</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              </ul>
+          </nav>
+      </div>
     </header>
     <main>
         <div class="mainBox">
-            
+
             <table>
             <tbody>
                 <tr>
@@ -112,22 +114,22 @@
             <td>
                 <div id="dyd">
                     <h2>FREQUENTLY ASKED QUESTIONS</h2>
-    
+
                 </div>
             </td>
         </td>
         </tr>
     </tbody>
         </table>
-        
-            
+
+
         </div>
     <div id="container">
         <div>
         <canvas id="myCanvas">
             Your browser does not support the canvas tag.
         </canvas>
-        
+
         <svg width="200" height="200">
             <polygon points="100,10 40,198 190,78 10,78 160,198"
             style="fill:blue;stroke:purple;stroke-width:5;" />
@@ -142,19 +144,19 @@
             <rect x="20" y="20" width="250" height="250" style="fill:blue">
               <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
             </rect>
-            Sorry, your browser does not support inline SVG.  
+            Sorry, your browser does not support inline SVG.
           </svg>
         </div>
 
-        
 
-        
-        
-        
+
+
+
+
         <h4>
-        <a href="javascript:toggleAllOn();">Show all answers</a> 
-        <a href="javascript:toggleAllOff();">Hide all answers</a></h4>  
-  
+        <a href="javascript:toggleAllOn();">Show all answers</a>
+        <a href="javascript:toggleAllOff();">Hide all answers</a></h4>
+
            <dl id="dlist1">
               <dt>How do I sign up?</dt>
           <dd id="answer">Sign up is very easy if u look at the nav bar you can see a log in option. Click that option than go to dont have an account? <br />
@@ -164,7 +166,7 @@
             </ol>
           </dd>
           <dt>How do I buy my subscrition?</dt>
-          <dd id="answer">Go to payment at the navbar then <br> 
+          <dd id="answer">Go to payment at the navbar then <br>
             <ul>
                 <li>Select the subscrition you want</li>
                 <li>Fill your data
@@ -175,12 +177,12 @@
                 </li>
             </ul>
         </dd>
-          
+
         <dt>How can I contact you?</dt>
           <dd id="answer">There is a number in about us page and an email or you can contact us in the contact form in about us </dd>
-        
+
         </dl>
-       
+
     </div>
     <br>
     </main>
@@ -207,12 +209,12 @@
         var ctx = c.getContext("2d");
         ctx.fillStyle = "purple";
         ctx.fillRect(20, 20, 75, 50);
-        
+
         //Turn transparency on
         ctx.globalAlpha = 0.2;
-        ctx.fillStyle = "blue"; 
-        ctx.fillRect(50, 50, 75, 50); 
-        ctx.fillStyle = "red"; 
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 75, 50);
+        ctx.fillStyle = "red";
         ctx.fillRect(80, 80, 75, 50);
         var c = document.getElementById("secondCanvas");
         var ct = c.getContext("2d");
@@ -227,6 +229,6 @@
         ct.fillRect(10, 10, 150, 80);
 
     </script>
-    
+
 </body>
 </html>
