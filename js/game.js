@@ -6,8 +6,8 @@ function startGame() {
 }
 
 var area = {
-    canvas : document.createElement("canvas"),
-    start : function() {
+    canvas: document.createElement("canvas"),
+    start: function() {
         this.canvas.id = 'game';
         this.canvas.width = 480;
         this.canvas.height = 270;
@@ -15,7 +15,7 @@ var area = {
         document.body.insertBefore(this.canvas, document.body.childNodes[6]);
         this.interval = setInterval(updateGameArea, 10);
     },
-    clear : function() {
+    clear: function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 }
@@ -26,7 +26,7 @@ function component(width, height, color, x, y) {
     this.speedX = 0;
     this.speedY = 0;
     this.x = x;
-    this.y = y;    
+    this.y = y;
     this.update = function() {
         ct = area.context;
         ct.fillStyle = color;
@@ -34,28 +34,52 @@ function component(width, height, color, x, y) {
     }
     this.newPos = function() {
         this.x += this.speedX;
-        this.y += this.speedY;        
-    }    
+        this.y += this.speedY;
+    }
 }
 
 function updateGameArea() {
     area.clear();
-    ball.newPos();    
+    ball.newPos();
     ball.update();
 }
 
-function moveup() {
-    ball.speedY -= 1; 
-}
+function move(dir) {
+    switch (dir) {
+        case "up":
+            ball.speedY = -1;
+            ball.speedX = 0;
 
-function movedown() {
-    ball.speedY += 1; 
-}
+            break;
+        case "left":
+            ball.speedX = -1;
+            ball.speedY = 0;
+            break;
 
-function moveleft() {
-    ball.speedX -= 1; 
-}
+        case "down":
+            ball.speedY = 1;
+            ball.speedX = 0;
+            break;
+        case "right":
+            ball.speedX = 1;
+            ball.speedY = 0;
+            break;
 
-function moveright() {
-    ball.speedX += 1; 
+
+    }
 }
+// function moveup() {
+//     ball.speedY -= 1; 
+// }
+
+// function movedown() {
+//     ball.speedY += 1; 
+// }
+
+// function moveleft() {
+//     ball.speedX -= 1; 
+// }
+
+// function moveright() {
+//     ball.speedX += 1; 
+// }
