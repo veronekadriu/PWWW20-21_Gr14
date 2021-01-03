@@ -44,6 +44,14 @@ h3, h4 {color: #697922; font-size: 1.1em; padding: 15px 0 5px;}
 a {color: #156694;}
 
 li {padding: 2px 0;}
+main button {
+  background-color: darkslategray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 dt {
 	font-weight: bold; 
