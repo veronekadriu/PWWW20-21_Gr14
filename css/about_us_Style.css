@@ -99,7 +99,7 @@ input[type=submit]:hover {
     color: darkslategray;
     text-align: left;
     border-radius: 5px;
-    background-image: url('/images/img_tree.jpg');
+    background-image: url('../images/img_tree.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: center; 
