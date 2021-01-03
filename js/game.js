@@ -16,7 +16,7 @@ var area = {
         document.body.insertBefore(this.canvas, document.body.childNodes[6]);
         this.interval = setInterval(updateGameArea, 10);
         
-        while((ball.x>=ball2.x) && (ball.y >= ball2.y)){
+        while((ball.x==ball2.x) && (ball.y == ball2.y)){
             window.alert("You have won the game!!!")
             
          }
