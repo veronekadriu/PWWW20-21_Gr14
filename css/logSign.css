@@ -1,11 +1,17 @@
+body{
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
      #signin {
          display: block;
      }
-     
+
      #signup {
          display: none;
      }
-     
+
      .mainBox {
          margin-left: 25px;
          padding: 0px;
@@ -13,11 +19,9 @@
          /* margin-right: 100px; */
          width: 95%;
          height: 700px;
-         background: rgb(198, 163, 245);
-         background: radial-gradient(circle, rgba(198, 163, 245, 1) 0%, rgba(82, 142, 175, 1) 95%);
          overflow: auto;
      }
-     
+
      .innerContainer {
          margin-left: 237.5px;
          margin-top: 10%;
@@ -30,11 +34,11 @@
          grid-template-columns: 1fr 1fr 1fr 1fr;
          grid-template-rows: 1fr 1fr 1fr 1fr;
      }
-     
+
      label {
          color: gray;
      }
-     
+
      img {
          width: 180px;
          grid-row: 1;
@@ -43,7 +47,7 @@
          grid-column: 2/4;
          justify-self: center;
      }
-     
+
      form {
          grid-row: 2/5;
          grid-column: 1/5;
@@ -51,22 +55,22 @@
          grid-template-columns: 1.5fr 1fr 1fr 1fr;
          grid-template-rows: 1fr 2fr 2fr;
      }
-     
+
      .inputContainer {
          grid-column: 1/5;
      }
-     
+
      .inputsAlign {
          margin-left: 2px;
      }
-     
+
      .inputIcons {
          grid-column: 1;
          width: 20px;
          margin-left: 10px;
          margin-bottom: -20px;
      }
-     
+
      .inputStyle {
          width: 90%;
          border: none;
@@ -74,16 +78,16 @@
          background-color: transparent;
          padding-left: 35px;
      }
-     
+
      .inputStyle:focus {
          border-bottom: 2px solid blue;
      }
-     
+
      .submitsContainer {
          grid-row: 3;
          grid-column: 1/2;
      }
-     
+
      .checkBoxLbl {
          vertical-align: middle;
          display: block;
@@ -93,7 +97,7 @@
          position: relative;
          cursor: pointer;
      }
-     
+
      .checkBoxLbl input {
          position: absolute;
          opacity: 0;
@@ -104,7 +108,7 @@
          left: 0;
          z-index: 10;
      }
-     
+
      .checkmark {
          position: absolute;
          top: 0;
@@ -114,23 +118,23 @@
          border: 2px solid gray;
          border-radius: 10px;
      }
-     
+
      .checkmark:after {
          content: "";
          position: absolute;
          display: none;
      }
-     
+
      .checkBoxLbl input:checked~.checkmark:after {
          display: block;
      }
-     
+
      .checkBoxLbl input:checked~.checkmark {
          display: block;
          background-color: #3b7a9d;
          transition: ease-in-out 0.5s;
      }
-     
+
      .checkBoxLbl .checkmark:after {
          left: 9px;
          top: 5px;
@@ -143,7 +147,7 @@
          transform: rotate(45deg);
          transition: ease-in-out 0.5s;
      }
-     
+
      .submitButton {
          grid-row: 3;
          grid-column: 3/6;
@@ -153,13 +157,13 @@
          background-color: transparent;
          color: gray;
      }
-     
+
      .submitButton:hover {
          scale: 1.1;
          transition: ease-in-out 0.2s;
          background-color: #3b7a9d5f;
      }
-     
+
      .signUpTrigger {
          cursor: pointer;
          grid-row: 5;
@@ -168,12 +172,12 @@
          text-decoration: none;
          color: gray;
      }
-     
+
      .signUpTrigger:hover {
          scale: 1.05;
          color: cornflowerblue;
      }
-     
+
      #signUpButton {
          margin-top: 20px;
          grid-row: 3;
