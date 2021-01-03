@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css2?family=Anton&display=swap);
+  }
+  
+.contactUsBox1{
+    font-family: myFirstFont;
+  }
 .titleBox {
     display: flex;
     flex-direction: column;
@@ -46,9 +54,70 @@
     /* background-color: #3b7a9d; */
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
+.elaborateBox1 {
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-self: center;
+    text-align: center;
+    /* z-index: -1; */
+    /* background-color: #3b7a9d; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+h2{
+    text-align: center;
+    text-decoration: dotted;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    background-color: darkslategray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+#submit{
+    text-align: center;
+}
+  
+.container {
+    color: darkslategray;
+    text-align: left;
+    border-radius: 5px;
+    background-image: url('/images/img_tree.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center; 
+    padding: 10px;
+    width: 100%;
+    height:300px;
+}
+
+.text, #lname,  textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 .aboutUsBox {
     -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
@@ -68,7 +137,7 @@
 
 .abousUsTitle {
     margin: 70px 0px 0px 0px;
-    font-family: 'Anton', sans-serif;
+    font-family: myFirstFont;
     color: #777777;
 }
 
@@ -86,6 +155,9 @@
     padding: 20px;
     color: gray;
     margin-top: -10px;
+    word-wrap: break-word;
+    text-align: left;
+
 }
 
 .contactUsBox {
@@ -96,6 +168,21 @@
     width: 45%;
     z-index: 2;
     margin-top: -100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contactUsBox1 {
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    order: 1;
+    height: 500px;
+    width: 50%;
+    z-index: 2;
+    margin-top: 0px;
     background-color: #ffffff;
     border-radius: 10px;
     -webkit-box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.75);

@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/body.css">
+    
 
     <title>About Us</title>
+
+    <script>
+        function clickCounter() {
+        if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+         localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "Local: You have clicked the button " +
+        localStorage.clickcount + " time(s).";}
+
+        function clickCounter2() {
+        if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+            sessionStorage.clickcount = 1;
+            }
+            document.getElementById("results").innerHTML = "Session: You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+        } else {
+            document.getElementById("results").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+        }
+
+        
+        </script>
+
+    
 </head>
 
 <body>
@@ -35,7 +64,10 @@
 
             <div class="searchBar">
                 <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
-                <button class="inputsOfSearchBar" id="searchButton">SEARCH</button>
+                
+                <button class="inputsOfSearchBar" id="searchButton" onclick="clickCounter2()" >SEARCH</button>
+                <p id="results"></p>
+                
             </div>
         </div>
 
@@ -82,9 +114,11 @@
                         <p id="contactUsText">Contact us</p>
                         <img id="contactImg" src="./images/contactIcon.png" alt="">
 
-                        <a class="contcatInfoStyle" href="#" id="number">+38344837433 </a>
+                        <a class="contcatInfoStyle" href="tel:+38344837433" id="number">+38344837433 </a>
                         <span id="divider"> | </span>
-                        <a class="contcatInfoStyle" href="#" id="email">bodyfit@email.com</a>
+                        <address id="email">
+                        <a class="contcatInfoStyle" href="mailto:bodyfit@email.com" >bodyfit@email.com</a>
+                        </address>
                     </div>
 
 
@@ -93,12 +127,77 @@
 
 
             </div>
-
-
-
-
         </div>
 
+
+            <div class="elaborateBox1">
+
+                <div class="contactUsBox1">
+                    <table class="container">
+                        <tr >
+                            <th class="header" ><h2>Contact Us!</h2></th>
+                            <form class="contactForm"   autocomplete="on">
+                        </tr>
+                     
+                        <tr>
+                            <td >
+                                <label for="fname">Full Name</label>
+                                <input type="text" class="text" name="firstname" placeholder="Your full name..">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <label for="lname">Why are you writing to us:</label>
+                                <input list="types" name="types" id="lname">
+                                <datalist id="types">
+                                    <option value="Complaint">
+                                    <option value="For fun">
+                                    <option value="To say thank you">
+                                   
+                                </datalist>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td >
+                                <label for="email">Email</label>
+                                <input type="email" class="text" name="email" placeholder="Your email.." autocomplete="off">
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td >
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject"  style="height:100px"></textarea>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td id="submit">
+                                <input type="submit" value="Submit" onclick="clickCounter()" >
+                                <p id="result"></p>
+                               
+                            </form>
+                            </td>
+                        </tr>
+                       
+                    </table>
+
+                   
+                
+                
+                
+                
+                
+                </div>
+
+            </div>
+
+
+
+
+        
 
 
 
