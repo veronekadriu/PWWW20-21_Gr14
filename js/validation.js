@@ -32,9 +32,10 @@ function validatePayment(event) {
         sum += parseInt(cardNumbers[i]);
     }
     i
-    // console.log(sum);
+    console.log(sum);
     if (sum % 10 != 0) {
         window.alert("The card you entered s not a valid card please  try again!");
+        stopSubmiting(event);
     }
     contactUsValidate(event);
 
@@ -42,15 +43,17 @@ function validatePayment(event) {
     var numberRegex = "^[0-9]+$";
     if (!number.match(numberRegex)) {
         window.alert("Please give a valid number");
+        stopSubmiting(event);
     }
     var city = document.getElementById("city").value;
     var cityRegex = "^[a-zA-z]+$";
 
 
-    console.log(city.match(cityRegex));
+    // console.log(city.match(cityRegex));
     if (!city.match(cityRegex)) {
         window.alert("Please enter a city!");
+        stopSubmiting(event);
     }
 
-    stopSubmiting(event);
+
 }
