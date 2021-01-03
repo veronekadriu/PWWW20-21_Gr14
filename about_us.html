@@ -8,87 +8,86 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/body.css">
-
+    <script src="./js/validation.js"></script>
 
     <title>About Us</title>
 
     <script>
         function clickCounter() {
-        if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount) + 1;
-        } else {
-         localStorage.clickcount = 1;
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "Local: You have clicked the button " +
+                localStorage.clickcount + " time(s).";
         }
-        document.getElementById("result").innerHTML = "Local: You have clicked the button " +
-        localStorage.clickcount + " time(s).";}
 
         function clickCounter2() {
-        if (typeof(Storage) !== "undefined") {
-            if (sessionStorage.clickcount) {
-            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            if (typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                document.getElementById("results").innerHTML = "Session: You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
             } else {
-            sessionStorage.clickcount = 1;
+                document.getElementById("results").innerHTML = "Sorry, your browser does not support web storage...";
             }
-            document.getElementById("results").innerHTML = "Session: You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
-        } else {
-            document.getElementById("results").innerHTML = "Sorry, your browser does not support web storage...";
         }
-        }
-
-
-        </script>
+    </script>
 
 
 </head>
 
 <body>
     <header>
-      <div id="topBorder">
+        <div id="topBorder">
 
-      </div>
-
-
-      <div class="topPage">
+        </div>
 
 
-
-          <span class="logo" id="thicLogo"><span class="largerLetter">B</span>ODY<span class="largerLetter">F</span>IT</span>
-          <span id="softLogo">|</span>
-
-          <div class="logoContainer">
-
-              <label class="softLogoText" id="topRowLogo"> Your Fitness Page </label>
-              <label class="softLogoText" id="bottomRowLogo">Welcome</label>
-
-          </div>
+        <div class="topPage">
 
 
-          <div class="searchBar">
-              <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
-              <button class="inputsOfSearchBar" id="searchButton">search</button>
-          </div>
-      </div>
 
-      <div>
-          <nav class="navBar">
-            <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">GALLERY</a>
+            <span class="logo" id="thicLogo"><span class="largerLetter">B</span>ODY<span class="largerLetter">F</span>IT</span>
+            <span id="softLogo">|</span>
+
+            <div class="logoContainer">
+
+                <label class="softLogoText" id="topRowLogo"> Your Fitness Page </label>
+                <label class="softLogoText" id="bottomRowLogo">Welcome</label>
+
+            </div>
+
+
+            <div class="searchBar">
+                <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
+                <button class="inputsOfSearchBar" id="searchButton">search</button>
+            </div>
+        </div>
+
+        <div>
+            <nav class="navBar">
                 <ul>
-                  <li><a href="ambient.html">Ambient</a></li>
-                  <li><a href="training.html">Training</a></li>
-                  <li><a href="clients.html">Clients</a></li>
-                  <li><a href="staff.html">Staff</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">GALLERY</a>
+                        <ul>
+                            <li><a href="ambient.html">Ambient</a></li>
+                            <li><a href="training.html">Training</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="staff.html">Staff</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#news">LATEST NEWS</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="login_SignUp.html">LOG IN</a></li>
+                    <li><a href="payment.html">PAYMENT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
-            </li>
-              <li><a href="#news">LATEST NEWS</a></li>
-              <li><a href="about_us.html">ABOUT US</a></li>
-              <li><a href="login_SignUp.html">LOG IN</a></li>
-              <li><a href="payment.html">PAYMENT</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              </ul>
-          </nav>
-      </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -139,69 +138,71 @@
         </div>
 
 
-            <div class="elaborateBox1">
+        <div class="elaborateBox1">
 
-                <div class="contactUsBox1">
-                    <table class="container">
-                        <tr >
-                            <th class="header" ><h2>Contact Us!</h2></th>
-                            <form class="contactForm"   autocomplete="on">
-                        </tr>
+            <div class="contactUsBox1">
+                <table class="container">
+                    <tr>
+                        <th class="header">
+                            <h2>Contact Us!</h2>
+                        </th>
+                        <form class="contactForm" autocomplete="on" onsubmit="contactUsValidate(event)">
+                    </tr>
 
-                        <tr>
-                            <td >
-                                <label for="fname">Full Name</label>
-                                <input type="text" class="text" name="firstname" placeholder="Your full name..">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td >
-                                <label for="lname">Why are you writing to us:</label>
-                                <input list="types" name="types" id="lname">
-                                <datalist id="types">
+                    <tr>
+                        <td>
+                            <label for="fname">Full Name</label>
+                            <input type="text" class="text" name="firstname" id="name" placeholder="Your full name..">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lname">Why are you writing to us:</label>
+                            <input list="types" name="types" id="lname" required>
+                            <datalist id="types">
                                     <option value="Complaint">
                                     <option value="For fun">
                                     <option value="To say thank you">
 
                                 </datalist>
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td >
-                                <label for="email">Email</label>
-                                <input type="email" class="text" name="email" placeholder="Your email.." autocomplete="off">
-                            </td>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                            <input type="email" required class="text" name="email" placeholder="Your email.." autocomplete="off">
+                        </td>
 
-                        </tr>
+                    </tr>
 
-                        <tr>
-                            <td >
-                                <label for="subject">Subject</label>
-                                <textarea id="subject" name="subject"  style="height:100px"></textarea>
-                            </td>
+                    <tr>
+                        <td>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" style="height:100px"></textarea>
+                        </td>
 
-                        </tr>
-                        <tr>
-                            <td id="submit">
-                                <input type="submit" value="Submit" onclick="clickCounter()" >
-                                <p id="result"></p>
+                    </tr>
+                    <tr>
+                        <td id="submit">
+                            <input type="submit" value="Submit" onclick="clickCounter()">
+                            <p id="result"></p>
 
                             </form>
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
 
-                    </table>
-
-
+                </table>
 
 
 
 
 
-                </div>
+
 
             </div>
+
+        </div>
 
 
 

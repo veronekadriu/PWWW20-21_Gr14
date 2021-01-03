@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/payment1.css">
-
+    <script src="./js/validation.js"></script>
 
     <title>Payment</title>
 
@@ -41,61 +41,60 @@
         }
     </script>
     <style>
-        main{
+        main {
             color: gray;
-
         }
     </style>
 </head>
 
-<body  onload="loadYears()">
+<body onload="loadYears()">
     <header>
-      <div id="topBorder">
+        <div id="topBorder">
 
-      </div>
-
-
-      <div class="topPage">
+        </div>
 
 
-
-          <span class="logo" id="thicLogo"><span class="largerLetter">B</span>ODY<span class="largerLetter">F</span>IT</span>
-          <span id="softLogo">|</span>
-
-          <div class="logoContainer">
-
-              <label class="softLogoText" id="topRowLogo"> Your Fitness Page </label>
-              <label class="softLogoText" id="bottomRowLogo">Welcome</label>
-
-          </div>
+        <div class="topPage">
 
 
-          <div class="searchBar">
-              <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
-              <button class="inputsOfSearchBar" id="searchButton">search</button>
-          </div>
-      </div>
 
-      <div>
-          <nav class="navBar">
-            <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">GALLERY</a>
+            <span class="logo" id="thicLogo"><span class="largerLetter">B</span>ODY<span class="largerLetter">F</span>IT</span>
+            <span id="softLogo">|</span>
+
+            <div class="logoContainer">
+
+                <label class="softLogoText" id="topRowLogo"> Your Fitness Page </label>
+                <label class="softLogoText" id="bottomRowLogo">Welcome</label>
+
+            </div>
+
+
+            <div class="searchBar">
+                <input class="inputsOfSearchBar" id="textFieldOfSearch" placeholder="Search our Website..." type="text">
+                <button class="inputsOfSearchBar" id="searchButton">search</button>
+            </div>
+        </div>
+
+        <div>
+            <nav class="navBar">
                 <ul>
-                  <li><a href="ambient.html">Ambient</a></li>
-                  <li><a href="training.html">Training</a></li>
-                  <li><a href="clients.html">Clients</a></li>
-                  <li><a href="staff.html">Staff</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">GALLERY</a>
+                        <ul>
+                            <li><a href="ambient.html">Ambient</a></li>
+                            <li><a href="training.html">Training</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="staff.html">Staff</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#news">LATEST NEWS</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="login_SignUp.html">LOG IN</a></li>
+                    <li><a href="payment.html">PAYMENT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
-            </li>
-              <li><a href="#news">LATEST NEWS</a></li>
-              <li><a href="about_us.html">ABOUT US</a></li>
-              <li><a href="login_SignUp.html">LOG IN</a></li>
-              <li><a href="payment.html">PAYMENT</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              </ul>
-          </nav>
-      </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -109,60 +108,60 @@
             <div class="elaborateBox">
 
                 <div class="aboutUsBox">
-                    <form onchange="checked()" class="paymentForm" method="POST" action="">
+                    <form onchange="checked()" onsubmit="validatePayment(event)" class="paymentForm" method="POST" action="">
 
-                    <table class="typeOfSub">
-                        <tr >
-                            <th class="header" colspan="2">Payment Information</th>
+                        <table class="typeOfSub">
+                            <tr>
+                                <th class="header" colspan="2">Payment Information</th>
 
 
-                        </tr>
-                        <tr>
-                            <td id="tpyeOfSubTitle" colspan="2">Type Of Subcription</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="typeOfSub" value="0" id="regular" type="radio"><label for="">Regular 10$</label>
-                            </td>
-                            <td>
-                                <label for="">10$</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="double" name="typeOfSub" value="1" type="radio"><label for="">Double 20$</label>
-                            </td>
-                            <td>
-                                <label for="">20$</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="deluxe" name="typeOfSub" value="2" type="radio"><label for="">Deluxe 40$</label>
-                            </td>
-                            <td>
-                                <label for="">40$</label>
-                            </td>
-                        </tr>
+                            </tr>
+                            <tr>
+                                <td id="tpyeOfSubTitle" colspan="2">Type Of Subcription</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="typeOfSub" value="0" id="regular" type="radio"><label for="">Regular 10$</label>
+                                </td>
+                                <td>
+                                    <label for="">10$</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="double" name="typeOfSub" value="1" type="radio"><label for="">Double 20$</label>
+                                </td>
+                                <td>
+                                    <label for="">20$</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="deluxe" name="typeOfSub" value="2" type="radio"><label for="">Deluxe 40$</label>
+                                </td>
+                                <td>
+                                    <label for="">40$</label>
+                                </td>
+                            </tr>
                             <td>
                                 <input id="vip" name="typeOfSub" value="3" type="radio"><label for="">VIP 100$</label>
                             </td>
                             <td>
                                 <label for="">100$</label>
                             </td>
-                        </tr>
+                            </tr>
 
 
-                        <tr>
-                            <td class="totalAmount">
-                                <label for=""> Total Amount</label>
-                            </td>
+                            <tr>
+                                <td class="totalAmount">
+                                    <label for=""> Total Amount</label>
+                                </td>
 
-                            <td colspan="" class="totalAmount">
-                                <input id="totalAmountText" disabled class="textBoxStyle" type="text" value="$">
-                            </td>
-                        </tr>
-                    </table>
+                                <td colspan="" class="totalAmount">
+                                    <input id="totalAmountText" disabled class="textBoxStyle" type="text" value="$">
+                                </td>
+                            </tr>
+                        </table>
 
                 </div>
 
@@ -191,7 +190,7 @@
                         </tr>
                         <tr>
                             <td colspan="6">
-                                <input class="textBoxStyle fullNameInput" name="fullName" type="text">
+                                <input class="textBoxStyle fullNameInput" name="fullName" maxlength="16" id="card" type="text">
                             </td>
                         </tr>
                         <tr>
@@ -234,7 +233,8 @@
                         <tr>
                             <td class="nameSpaceing" colspan="5">
                                 <label class="placeholder" for="">Name</label>
-                                <input class="textBoxStyle fullNameInput  " type="text">
+                                <input class="textBoxStyle fullNameInput" id="name" type="text">
+
                             </td>
                         </tr>
                         <tr>
@@ -251,7 +251,7 @@
                         <tr>
                             <td class="nameSpaceing" colspan="5">
                                 <label for="">City/Town</label>
-                                <input class="textBoxStyle fullNameInput " type="text">
+                                <input class="textBoxStyle fullNameInput" id="city" type="text">
                             </td>
                         </tr>
                         <tr>
@@ -270,18 +270,19 @@
                             <td colspan="8">
                                 <div class="bindingBox">
                                     <div class="number">
-                                        <input class="textBoxStyle fullNameInput" type="number">
+                                        <input class="textBoxStyle fullNameInput" type="text" id="tel">
                                     </div>
                                     <div class="email">
-                                        <input class="textBoxStyle fullNameInput" type="email">
+                                        <input required class="textBoxStyle fullNameInput" type="email">
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr><td colspan="8"></td>
-                            </tr>
                         <tr>
-                            <td colspan="8" >
+                            <td colspan="8"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
                                 <input class="fullNameInput submitStyle" type="submit" value="Subscribe">
                             </td>
                         </tr>
@@ -289,15 +290,15 @@
                 </div>
 
             </div>
-        </form>
+            </form>
 
 
 
-                </div>
+        </div>
 
 
 
-            </div>
+        </div>
 
 
 
