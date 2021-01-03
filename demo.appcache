@@ -18,3 +18,10 @@ images/food.jpg
 images/gym.jpg
 images/staff.jpg
 images/clients.jpg
+
+
+NETWORK:
+login.asp
+
+FALLBACK:
+/html/ /offline.html
