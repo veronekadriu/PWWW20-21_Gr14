@@ -1,27 +1,74 @@
 /* ================================================NAVBAR=================================================== */
-
 .navBar {
-    padding-top: 20px;
+    padding-top: 8px;
     width: 100%;
-    height: 40px;
+    height: 55px;
+    vertical-align: middle;
     /* border: 1px solid blue; */
     background-color: #3b7a9d;
 }
 
-.navBarElements {
-    /* border: 1px solid blue; */
-    vertical-align: middle;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
+.navBar ul {
+  float: left;
+  list-style: none;
+  padding-left: 0;
+}
+.navBar ul li{
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+.navBar ul li a {
+    /* border: 1px solid blue;*/
+    padding-right: 20px;
+    padding-left: 15px;
     color: white;
     font-size: 13.3333px;
     text-decoration: none;
+    /*position: relative;*/
 }
 
-.navBarElements:hover {
-    color: #333333;
+.navBar ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #3b7a9d;
+    z-index:99;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+.navBar ul li:hover ul {
+    display: block;
+}
+
+.navBar ul li ul li{
+  margin-top: 5px;
+  padding: 5px 10px 7px 0px;
+  text-align: center;
+  margin-bottom: 5px;
+  width: 70px;
+}
+.navBar ul li ul li:hover {
+background-color: steelblue;
+
+}
+
+.navBar ul li a:hover {
+  color: #333333;
+}
+/*.navBar ul li ul{
+  display:block;
+  position: absolute;
+}*/
+
+/*.navBar ul li:hover .droplist {
+  display: block;
+  position: absolute;
+  background: steelblue;
+  margin-top: 5px;
+  margin-left: -10px;
+}*/
 
 .topPage {
     /* border: 5px solid red; */
@@ -102,38 +149,3 @@
     font-size: 15px;
     color: #999999;
 }
-
-.dropbtn {
-  background-color: steelblue;
-  color: steelblue;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: steelblue;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px steelblue;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: steelblue;}
